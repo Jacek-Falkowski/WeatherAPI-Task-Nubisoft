@@ -35,3 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+/WeatherAPI-Task-Nubisoft/nubiweather/src/main/resources/application-local.yaml
+/WeatherAPI-Task-Nubisoft/nubiweather/src/main/resources/docker-compose.yaml
