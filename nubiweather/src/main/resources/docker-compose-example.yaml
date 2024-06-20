@@ -1,0 +1,19 @@
+# In resources directory run command: docker-compose up -d to run all containers
+# In resources directory run command: docker-compose down to stop all containers
+
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    container_name: {{postgres-container-name}}
+    environment:
+      - POSTGRES_PASSWORD={{postgres-database-password}}
+      - POSTGRES_DB={{postgres-database-name}}
+    ports:
+      - {{XXXX:XXXX}}
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
